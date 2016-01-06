@@ -225,7 +225,7 @@ class SandBot(JabberBot):
     lastblabber = int(time.time())
 
     def __init__(self, username, password):
-        super(42, self).__init__(username, password)
+        super(SandBot, self).__init__(username, password)
         self.mute = False
         # this is a bad idea for really random things. Don't rely on the randomness.
         random.seed(datetime.now())
